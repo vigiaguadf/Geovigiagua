@@ -1,0 +1,122 @@
+[
+  {
+    "ra": "Plano Piloto",
+    "regiao": "Central",
+    "amostras": 175,
+    "satisfatorias": 164,
+    "ctotais": 11,
+    "estabelecimentos": 65,
+    "lat": -15.793,
+    "lon": -47.882
+  },
+  {
+    "ra": "Ceilândia",
+    "regiao": "Oeste",
+    "amostras": 165,
+    "satisfatorias": 150,
+    "ctotais": 15,
+    "estabelecimentos": 61,
+    "lat": -15.814,
+    "lon": -48.105
+  },
+  {
+    "ra": "Taguatinga",
+    "regiao": "Sudoeste",
+    "amostras": 150,
+    "satisfatorias": 140,
+    "ctotais": 10,
+    "estabelecimentos": 56,
+    "lat": -15.835,
+    "lon": -48.056
+  },
+  {
+    "ra": "Planaltina",
+    "regiao": "Norte",
+    "amostras": 120,
+    "satisfatorias": 111,
+    "ctotais": 9,
+    "estabelecimentos": 44,
+    "lat": -15.62,
+    "lon": -47.65
+  },
+  {
+    "ra": "Sobradinho",
+    "regiao": "Norte",
+    "amostras": 100,
+    "satisfatorias": 94,
+    "ctotais": 6,
+    "estabelecimentos": 37,
+    "lat": -15.653,
+    "lon": -47.791
+  },
+  {
+    "ra": "Samambaia",
+    "regiao": "Sudoeste",
+    "amostras": 125,
+    "satisfatorias": 116,
+    "ctotais": 9,
+    "estabelecimentos": 46,
+    "lat": -15.903,
+    "lon": -48.061
+  },
+  {
+    "ra": "Gama",
+    "regiao": "Sul",
+    "amostras": 105,
+    "satisfatorias": 99,
+    "ctotais": 6,
+    "estabelecimentos": 39,
+    "lat": -15.998,
+    "lon": -47.988
+  },
+  {
+    "ra": "Paranoá",
+    "regiao": "Leste",
+    "amostras": 90,
+    "satisfatorias": 83,
+    "ctotais": 7,
+    "estabelecimentos": 33,
+    "lat": -15.747,
+    "lon": -47.768
+  },
+  {
+    "ra": "Guará",
+    "regiao": "Centro-Sul",
+    "amostras": 96,
+    "satisfatorias": 91,
+    "ctotais": 5,
+    "estabelecimentos": 35,
+    "lat": -15.824,
+    "lon": -47.98
+  },
+  {
+    "ra": "Brazlândia",
+    "regiao": "Oeste",
+    "amostras": 75,
+    "satisfatorias": 68,
+    "ctotais": 7,
+    "estabelecimentos": 28,
+    "lat": -15.67,
+    "lon": -48.2
+  },
+  {
+    "ra": "São Sebastião",
+    "regiao": "Leste",
+    "amostras": 81,
+    "satisfatorias": 76,
+    "ctotais": 5,
+    "estabelecimentos": 30,
+    "lat": -15.902,
+    "lon": -47.779
+  },
+  {
+    "ra": "Santa Maria",
+    "regiao": "Sul",
+    "amostras": 69,
+    "satisfatorias": 64,
+    "ctotais": 5,
+    "estabelecimentos": 25,
+    "lat": -16.015,
+    "lon": -48.013
+  }
+]

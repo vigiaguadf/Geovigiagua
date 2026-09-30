@@ -1,1 +1,64 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mapa | GeoVIGIÁGUA DF</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"></head><body><header><h1>GeoVIGIÁGUA DF</h1><p>Plataforma de Inteligência Territorial para a Vigilância da Qualidade da Água</p></header><nav><a href="index.html">INÍCIO</a><a href="painel.html">PAINEL</a><a href="mapa.html">MAPA INTERATIVO</a><a href="dados.html">DADOS & DOWNLOADS</a><a href="relatorios.html">RELATÓRIOS</a><a href="metodologia.html">METODOLOGIA</a><a href="sobre.html">SOBRE</a></nav><main class="container"><h2>Mapa Interativo</h2><div class="callout">Visualização pública agregada; não representa endereços individuais.</div><div class="panel" style="margin-top:10px"><div id="map"></div></div><section class="grid" style="margin-top:10px"><div class="panel"><h3>Camadas planejadas</h3><p>RAs • Regiões de Saúde • Indicadores • Heatmap</p></div><div class="panel"><h3>Análises</h3><p>Coropléticos • cobertura • densidade • séries espaço-temporais.</p></div><div class="panel"><h3>Governança</h3><p>Coordenadas precisas permanecem no ambiente institucional.</p></div></section></main><footer><b>GeoVIGIÁGUA DF</b> • Protótipo acadêmico público • Dados agregados.</footer><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script>const m=L.map('map').setView([-15.78,-47.88],9);L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{attribution:'Tiles © Esri'}).addTo(m);fetch('indicadores.json').then(x=>x.json()).then(d=>d.mapa.forEach(p=>L.circleMarker([p[1],p[2]],{radius:8,fillColor:'#0c9fb0',fillOpacity:.8,color:'#fff'}).bindPopup('<b>'+p[0]+'</b><br>Amostras agregadas: '+p[3]).addTo(m)));</script></body></html>
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mapa Interativo | GeoVIGIÁGUA DF</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js">
+<style>
+.map-layout{display:grid;grid-template-columns:285px 1fr;gap:11px}.side{background:#fff;border:1px solid #d7e5ea;border-radius:12px;padding:13px;height:fit-content}.side h3{font-size:12px;color:#0877a7;margin:5px 0 10px;text-transform:uppercase}.ctrl{margin-bottom:10px}.ctrl label{display:block;font-size:9px;font-weight:bold;color:#5d747f;margin-bottom:4px}.ctrl select,.ctrl button{width:100%;padding:8px;border:1px solid #cbdce3;border-radius:7px;background:#fff}.ctrl button{background:#073b5c;color:#fff;cursor:pointer}
+.layer-row{display:flex;gap:7px;align-items:center;font-size:11px;margin:8px 0}.mapwrap{position:relative;background:#fff;border:1px solid #d7e5ea;border-radius:12px;padding:8px}#map{height:650px;border-radius:8px}
+.map-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:11px}.map-title h2{margin:0}.map-title p{margin:4px 0 0;color:#687f89;font-size:12px}.demo{font-size:10px;background:#fff2d8;color:#8a5b00;border:1px solid #f0d797;padding:6px 9px;border-radius:14px;font-weight:bold}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:6px}.stat{background:#f4f9fb;border-radius:7px;padding:7px}.stat b{display:block;color:#073b5c;font-size:16px}.stat span{font-size:8px;color:#6d838d}
+.legend{background:white;padding:9px;border-radius:7px;box-shadow:0 1px 5px #0003;font-size:10px;line-height:18px}.legend i{width:16px;height:10px;float:left;margin:4px 7px 0 0;opacity:.75}
+.source{font-size:9px;color:#70858e;line-height:1.4;margin-top:10px}.warning{font-size:10px;padding:9px;background:#eef8f8;border:1px solid #c7e4e3;border-radius:7px;line-height:1.45}
+@media(max-width:850px){.map-layout{grid-template-columns:1fr}#map{height:550px}}
+</style></head><body>
+<header><h1>GeoVIGIÁGUA DF</h1><p>Plataforma de Inteligência Territorial para a Vigilância da Qualidade da Água</p></header>
+<nav><a href="index.html">INÍCIO</a><a href="painel.html">PAINEL</a><a href="mapa.html">MAPA INTERATIVO</a><a href="dados.html">DADOS & DOWNLOADS</a><a href="relatorios.html">RELATÓRIOS</a><a href="metodologia.html">METODOLOGIA</a><a href="sobre.html">SOBRE</a></nav>
+<main class="container">
+<div class="map-title"><div><h2>Mapa Interativo — WebGIS</h2><p>Análise territorial da Vigilância da Qualidade da Água no Distrito Federal</p></div><span class="demo">DADOS DEMONSTRATIVOS</span></div>
+<div class="map-layout">
+<aside class="side">
+<h3>Indicador</h3><div class="ctrl"><label>VARIÁVEL CARTOGRÁFICA</label><select id="indicador"><option value="amostras">Quantidade de amostras</option><option value="satisfatorias">Satisfatórias</option><option value="ctotais">C. totais — presença</option><option value="percentual">% satisfatórias</option><option value="estabelecimentos">Estabelecimentos</option></select></div>
+<h3>Filtro territorial</h3><div class="ctrl"><label>REGIÃO DE SAÚDE</label><select id="regiao"><option value="">Todas</option></select></div><div class="ctrl"><label>REGIÃO ADMINISTRATIVA</label><select id="ra"><option value="">Todas</option></select></div>
+<div class="ctrl"><button id="reset">Visualizar todo o DF</button></div>
+<h3>Camadas</h3>
+<label class="layer-row"><input id="showRA" type="checkbox" checked> Limites oficiais das RAs (2019)</label>
+<label class="layer-row"><input id="showPts" type="checkbox" checked> Síntese territorial por RA</label>
+<label class="layer-row"><input id="showHeat" type="checkbox"> Concentração / heatmap</label>
+<h3>Território selecionado</h3><div id="info" class="warning">Clique em uma RA no mapa ou escolha uma Região Administrativa no filtro.</div>
+<div class="source"><b>Base cartográfica:</b> IPEDF/Atlas do Distrito Federal — Limites das Regiões Administrativas, 2019, EPSG:4326. A camada é carregada via serviço WFS/GeoJSON do catálogo público.<br><br><b>Atenção:</b> a malha é de 2019 e deverá ser compatibilizada com a divisão administrativa adotada pela base operacional antes da versão final.</div>
+</aside>
+<section class="mapwrap"><div id="map"></div></section>
+</div></main>
+<footer><b>GeoVIGIÁGUA DF</b> • Protótipo acadêmico público • Dados territorialmente agregados.</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script>
+const WFS="https://catalogo.ipe.df.gov.br/geoserver/ows?outputFormat=json&request=GetFeature&service=WFS&srs=EPSG%3A4326&srsName=EPSG%3A4326&typename=geonode%3ALimite_RA_20190&version=1.0.0";
+const map=L.map("map",{zoomControl:true}).setView([-15.78,-47.88],9);
+const claro=L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:"© OpenStreetMap contributors"}).addTo(map);
+const sat=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Tiles © Esri"});
+L.control.layers({"Mapa claro":claro,"Imagem de satélite":sat},null,{position:"topright"}).addTo(map);L.control.scale({imperial:false}).addTo(map);
+let DATA=[],geo=null,raLayer=null,ptLayer=L.layerGroup().addTo(map),heat=null,legend=null;
+const $=x=>document.getElementById(x),norm=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toUpperCase().trim();
+function val(d){let k=$("indicador").value;if(k==="percentual")return d.amostras?100*d.satisfatorias/d.amostras:0;return +d[k]||0}
+function color(v,max){let r=max?Math.min(1,v/max):0;return r>.8?"#075985":r>.6?"#0877a7":r>.4?"#0c9fb0":r>.2?"#5bc0be":"#cdeeed"}
+function matchFeature(f){let n=norm(f.properties.ra||f.properties.RA_leg||f.properties.legenda);return DATA.find(d=>norm(d.ra)===n)}
+function selectedData(){return DATA.filter(d=>(!$("regiao").value||d.regiao===$("regiao").value)&&(!$("ra").value||d.ra===$("ra").value))}
+function styleFeature(f){let d=matchFeature(f),sel=selectedData(),max=Math.max(1,...sel.map(val));let visible=d&&sel.includes(d);return {color:"#fff",weight:1.2,fillColor:visible?color(val(d),max):"#dce5e8",fillOpacity:visible?.72:.18}}
+function popup(d){if(!d)return "<b>Região Administrativa</b><br>Sem indicador demonstrativo associado.";let p=d.amostras?(100*d.satisfatorias/d.amostras).toFixed(1):"0.0";return `<b>${d.ra}</b><br>Região de Saúde: ${d.regiao}<hr style="border:0;border-top:1px solid #ddd">Amostras: <b>${d.amostras}</b><br>Satisfatórias: <b>${d.satisfatorias}</b><br>C. totais — presença: <b>${d.ctotais}</b><br>Estabelecimentos: <b>${d.estabelecimentos}</b><br>% satisfatórias: <b>${p}%</b>`}
+function info(d){if(!d){$("info").innerHTML="Clique em uma RA no mapa ou escolha uma Região Administrativa no filtro.";return}$("info").innerHTML=`<b>${d.ra}</b><br>${d.regiao}<div class="stats" style="margin-top:8px"><div class="stat"><b>${d.amostras}</b><span>AMOSTRAS</span></div><div class="stat"><b>${d.satisfatorias}</b><span>SATISFATÓRIAS</span></div><div class="stat"><b>${d.ctotais}</b><span>C. TOTAIS</span></div><div class="stat"><b>${(100*d.satisfatorias/d.amostras).toFixed(1)}%</b><span>SATISFATÓRIAS</span></div></div>`}
+function renderPoints(){ptLayer.clearLayers();let a=selectedData(),max=Math.max(1,...a.map(val));a.forEach(d=>L.circleMarker([d.lat,d.lon],{radius:5+11*Math.sqrt(val(d)/max),color:"#fff",weight:1.5,fillColor:color(val(d),max),fillOpacity:.9}).bindPopup(popup(d)).on("click",()=>info(d)).addTo(ptLayer));if(!$("showPts").checked)map.removeLayer(ptLayer);else if(!map.hasLayer(ptLayer))ptLayer.addTo(map)}
+function renderHeat(){if(heat)map.removeLayer(heat);if($("showHeat").checked){let a=selectedData(),max=Math.max(1,...a.map(val));heat=L.heatLayer(a.map(d=>[d.lat,d.lon,val(d)/max]),{radius:35,blur:25,maxZoom:12}).addTo(map)}}
+function renderLegend(){if(legend)map.removeControl(legend);legend=L.control({position:"bottomright"});legend.onAdd=()=>{let div=L.DomUtil.create("div","legend"),a=selectedData(),max=Math.max(1,...a.map(val));div.innerHTML="<b>"+$("indicador").selectedOptions[0].text+"</b><br>";[.2,.4,.6,.8,1].forEach(x=>div.innerHTML+=`<i style="background:${color(x*max,max)}"></i>${Math.round(x*max)}<br>`);return div};legend.addTo(map)}
+function redraw(){if(raLayer)raLayer.setStyle(styleFeature);renderPoints();renderHeat();renderLegend();let d=DATA.find(x=>x.ra===$("ra").value);info(d);if(d&&raLayer){raLayer.eachLayer(l=>{let fd=matchFeature(l.feature);if(fd&&fd.ra===d.ra)map.fitBounds(l.getBounds(),{padding:[25,25]})})}}
+Promise.all([fetch("mapa_dados.json").then(r=>r.json()),fetch(WFS).then(r=>{if(!r.ok)throw Error("WFS indisponível");return r.json()})]).then(([d,g])=>{
+DATA=d;geo=g;[...new Set(DATA.map(x=>x.regiao))].sort().forEach(v=>$("regiao").add(new Option(v,v)));DATA.map(x=>x.ra).sort().forEach(v=>$("ra").add(new Option(v,v)));
+raLayer=L.geoJSON(geo,{style:styleFeature,onEachFeature:(f,l)=>{let d=matchFeature(f);l.bindPopup(popup(d));l.on({click:()=>info(d),mouseover:e=>e.target.setStyle({weight:3,color:"#073b5c"}),mouseout:e=>raLayer.resetStyle(e.target)})}}).addTo(map);map.fitBounds(raLayer.getBounds(),{padding:[10,10]});redraw();
+}).catch(e=>{$("info").innerHTML="<b>Camada oficial não carregou.</b><br>"+e.message+"<br><br>O mapa-base e os dados demonstrativos continuam disponíveis.";fetch("mapa_dados.json").then(r=>r.json()).then(d=>{DATA=d;renderPoints();renderHeat();renderLegend()})});
+["indicador","regiao","ra"].forEach(id=>$(id).addEventListener("change",redraw));
+$("showRA").onchange=()=>{if(!raLayer)return;$("showRA").checked?raLayer.addTo(map):map.removeLayer(raLayer)};
+$("showPts").onchange=renderPoints;$("showHeat").onchange=renderHeat;
+$("reset").onclick=()=>{$("regiao").value="";$("ra").value="";redraw();if(raLayer)map.fitBounds(raLayer.getBounds(),{padding:[10,10]});else map.setView([-15.78,-47.88],9)};
+</script></body></html>
