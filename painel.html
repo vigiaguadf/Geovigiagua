@@ -1,4 +1,67 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Painel | GeoVIGIÁGUA DF</title><link rel="stylesheet" href="style.css"></head><body><header><h1>GeoVIGIÁGUA DF</h1><p>Plataforma de Inteligência Territorial para a Vigilância da Qualidade da Água</p></header><nav><a href="index.html">INÍCIO</a><a href="painel.html">PAINEL</a><a href="mapa.html">MAPA INTERATIVO</a><a href="dados.html">DADOS & DOWNLOADS</a><a href="relatorios.html">RELATÓRIOS</a><a href="metodologia.html">METODOLOGIA</a><a href="sobre.html">SOBRE</a></nav><main class="container"><h2>Painel de Indicadores</h2><div class="callout">Visão pública demonstrativa com informações agregadas.</div><section class="kpis"><div class="kpi"><b>1.808</b><span>Amostras</span></div><div class="kpi"><b>1.685</b><span>Satisfatórias*</span></div><div class="kpi"><b>123</b><span>C. totais — presença</span></div><div class="kpi"><b>34</b><span>RAs</span></div><div class="kpi"><b>694</b><span>Estabelecimentos</span></div></section><section class="grid2"><div class="panel"><h3>Amostras por mês</h3><div class="chart"><canvas id="m"></canvas></div></div><div class="panel"><h3>Região de Saúde</h3><div class="chart"><canvas id="r"></canvas></div></div><div class="panel"><h3>Motivo da coleta</h3><div class="chart"><canvas id="mo"></canvas></div></div><div class="panel"><h3>Resultado microbiológico</h3><div class="chart"><canvas id="res"></canvas></div></div></section></main><footer><b>GeoVIGIÁGUA DF</b> • Protótipo acadêmico público • Dados agregados.</footer><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script><script>
-fetch('indicadores.json').then(x=>x.json()).then(d=>{
-function c(id,t,l,v){new Chart(document.getElementById(id),{type:t,data:{labels:l,datasets:[{label:'Amostras',data:v}]},options:{responsive:true,maintainAspectRatio:false}})}
-c('m','bar',d.mensal.map(x=>x[0]),d.mensal.map(x=>x[1]));c('r','bar',d.regioes.map(x=>x[0]),d.regioes.map(x=>x[1]));c('mo','bar',d.motivos.map(x=>x[0]),d.motivos.map(x=>x[1]));c('res','doughnut',['Satisfatórias*','C. totais — presença'],[1685,123]);});</script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel | GeoVIGIÁGUA DF</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+.dash-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:12px}.dash-head h2{margin:0}.dash-head p{margin:5px 0 0;color:#657d87;font-size:13px}
+.demo{font-size:10px;font-weight:bold;padding:6px 9px;border-radius:15px;background:#fff2d8;color:#8a5b00;border:1px solid #f0d797}
+.filters{display:grid;grid-template-columns:repeat(5,1fr) auto;gap:9px;background:#fff;border:1px solid #d7e5ea;border-radius:12px;padding:13px}
+.filter label{display:block;font-size:9px;font-weight:bold;color:#58717c;margin-bottom:5px;text-transform:uppercase}.filter select{width:100%;padding:9px;border:1px solid #cbdce3;border-radius:7px;background:#fff}
+.clear{align-self:end;border:0;border-radius:7px;background:#073b5c;color:#fff;padding:10px 14px;cursor:pointer}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:12px 0}.card{background:#fff;border:1px solid #d7e5ea;border-radius:11px;padding:14px;border-left:5px solid #0c9fb0}.card strong{display:block;font-size:25px;color:#073b5c}.card span{font-size:9px;color:#667f89}
+.dgrid{display:grid;grid-template-columns:1.35fr 1fr;gap:11px}.box{background:#fff;border:1px solid #d7e5ea;border-radius:12px;padding:14px;min-height:305px}.box h3{margin:0;color:#0877a7;font-size:15px}.box p{font-size:10px;color:#71858e;margin:4px 0 10px}.chartbox{height:245px}
+.info{background:#eef8f8;border:1px solid #c7e4e3;padding:13px;border-radius:9px;font-size:12px;line-height:1.55}
+@media(max-width:950px){.filters{grid-template-columns:1fr 1fr 1fr}.cards{grid-template-columns:1fr 1fr 1fr}.dgrid{grid-template-columns:1fr}}
+@media(max-width:600px){.filters,.cards{grid-template-columns:1fr}.dash-head{display:block}.demo{display:inline-block;margin-top:8px}}
+</style>
+</head>
+<body>
+<header><h1>GeoVIGIÁGUA DF</h1><p>Plataforma de Inteligência Territorial para a Vigilância da Qualidade da Água</p></header>
+<nav><a href="index.html">INÍCIO</a><a href="painel.html">PAINEL</a><a href="mapa.html">MAPA INTERATIVO</a><a href="dados.html">DADOS & DOWNLOADS</a><a href="relatorios.html">RELATÓRIOS</a><a href="metodologia.html">METODOLOGIA</a><a href="sobre.html">SOBRE</a></nav>
+<main class="container">
+<div class="dash-head"><div><h2>Painel de Indicadores</h2><p>Monitoramento da Vigilância da Qualidade da Água no Distrito Federal</p></div><span class="demo">DADOS DEMONSTRATIVOS</span></div>
+<section class="filters">
+<div class="filter"><label>Ano</label><select id="ano"><option value="">Todos</option></select></div>
+<div class="filter"><label>Mês</label><select id="mes"><option value="">Todos</option></select></div>
+<div class="filter"><label>Região Administrativa</label><select id="ra"><option value="">Todas</option></select></div>
+<div class="filter"><label>Região de Saúde</label><select id="regiao"><option value="">Todas</option></select></div>
+<div class="filter"><label>Motivo da coleta</label><select id="motivo"><option value="">Todos</option></select></div>
+<button id="limpar" class="clear">Limpar filtros</button>
+</section>
+<section class="cards">
+<div class="card"><strong id="kA">—</strong><span>AMOSTRAS</span></div>
+<div class="card"><strong id="kS">—</strong><span>SATISFATÓRIAS</span></div>
+<div class="card"><strong id="kC">—</strong><span>C. TOTAIS — PRESENÇA</span></div>
+<div class="card"><strong id="kR">—</strong><span>RAs REPRESENTADAS</span></div>
+<div class="card"><strong id="kE">—</strong><span>ESTABELECIMENTOS*</span></div>
+</section>
+<section class="dgrid">
+<div class="box"><h3>Evolução mensal</h3><p>Quantidade de amostras por mês</p><div class="chartbox"><canvas id="cMes"></canvas></div></div>
+<div class="box"><h3>Resultado microbiológico</h3><p>Satisfatórias × presença de coliformes totais</p><div class="chartbox"><canvas id="cMicro"></canvas></div></div>
+<div class="box"><h3>Região Administrativa</h3><p>RAs com maior quantidade de amostras na seleção</p><div class="chartbox"><canvas id="cRA"></canvas></div></div>
+<div class="box"><h3>Motivo da coleta</h3><p>Distribuição segundo finalidade registrada</p><div class="chartbox"><canvas id="cMot"></canvas></div></div>
+<div class="box"><h3>Região de Saúde</h3><p>Distribuição territorial das amostras</p><div class="chartbox"><canvas id="cReg"></canvas></div></div>
+<div class="box"><h3>Sobre esta versão</h3><p>Arquitetura funcional do painel público</p><div class="info"><b>Filtros integrados:</b> todos os cartões e gráficos são recalculados simultaneamente.<br><br><b>Próxima etapa:</b> substituir <code>painel_dados.json</code> pela base pública agregada e validada do projeto.<br><br><b>Governança:</b> a versão pública não deve expor endereços, coordenadas precisas ou registros individualizados.</div></div>
+</section>
+</main>
+<footer><b>GeoVIGIÁGUA DF</b> • Protótipo acadêmico público • Dados agregados.</footer>
+<script>
+const MESES=["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];let BASE=[],charts={};
+const $=id=>document.getElementById(id),fmt=n=>new Intl.NumberFormat("pt-BR").format(n);
+function uniq(k){return [...new Set(BASE.map(x=>x[k]).filter(Boolean))].sort()}
+function fill(id,vals){vals.forEach(v=>{let o=document.createElement("option");o.value=v;o.textContent=v;$(id).appendChild(o)})}
+function filtered(){let f={ano:$("ano").value,mes:$("mes").value,ra:$("ra").value,regiao:$("regiao").value,motivo:$("motivo").value};return BASE.filter(x=>Object.keys(f).every(k=>!f[k]||String(x[k])===f[k]))}
+function sum(a,k){return a.reduce((s,x)=>s+(Number(x[k])||0),0)}
+function group(a,k){let o={};a.forEach(x=>o[x[k]]=(o[x[k]]||0)+(Number(x.amostras)||0));return o}
+function draw(id,type,labels,vals,label){if(charts[id])charts[id].destroy();charts[id]=new Chart($(id),{type:type,data:{labels:labels,datasets:[{label:label,data:vals,borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:type==="doughnut"}},scales:type==="doughnut"?{}:{y:{beginAtZero:true}}}})}
+function update(){let a=filtered(),S=sum(a,"satisfatorias"),C=sum(a,"ctotais");$("kA").textContent=fmt(sum(a,"amostras"));$("kS").textContent=fmt(S);$("kC").textContent=fmt(C);$("kR").textContent=new Set(a.map(x=>x.ra)).size;$("kE").textContent=fmt(sum(a,"estabelecimentos"));
+let m=group(a,"mes");draw("cMes","bar",MESES,MESES.map(x=>m[x]||0),"Amostras");draw("cMicro","doughnut",["Satisfatórias","C. totais — presença"],[S,C],"Resultado");
+let r=Object.entries(group(a,"ra")).sort((x,y)=>y[1]-x[1]).slice(0,15);draw("cRA","bar",r.map(x=>x[0]),r.map(x=>x[1]),"Amostras");
+let mo=Object.entries(group(a,"motivo")).sort((x,y)=>y[1]-x[1]);draw("cMot","bar",mo.map(x=>x[0]),mo.map(x=>x[1]),"Amostras");
+let re=Object.entries(group(a,"regiao")).sort((x,y)=>y[1]-x[1]);draw("cReg","bar",re.map(x=>x[0]),re.map(x=>x[1]),"Amostras")}
+fetch("painel_dados.json").then(r=>{if(!r.ok)throw Error("painel_dados.json não encontrado");return r.json()}).then(d=>{BASE=d;fill("ano",uniq("ano"));fill("mes",MESES.filter(x=>uniq("mes").includes(x)));fill("ra",uniq("ra"));fill("regiao",uniq("regiao"));fill("motivo",uniq("motivo"));["ano","mes","ra","regiao","motivo"].forEach(x=>$(x).addEventListener("change",update));$("limpar").onclick=()=>{["ano","mes","ra","regiao","motivo"].forEach(x=>$(x).value="");update()};update()}).catch(e=>alert("Erro ao carregar o painel: "+e.message));
+</script>
+</body></html>

@@ -1,0 +1,200 @@
+[
+  {
+    "ano": "2026",
+    "mes": "Jan",
+    "ra": "Plano Piloto",
+    "regiao": "Central",
+    "motivo": "Rotina",
+    "amostras": 84,
+    "satisfatorias": 79,
+    "ctotais": 5,
+    "estabelecimentos": 31
+  },
+  {
+    "ano": "2026",
+    "mes": "Jan",
+    "ra": "Águas Claras",
+    "regiao": "Sudoeste",
+    "motivo": "Rotina",
+    "amostras": 72,
+    "satisfatorias": 69,
+    "ctotais": 3,
+    "estabelecimentos": 27
+  },
+  {
+    "ano": "2026",
+    "mes": "Fev",
+    "ra": "Ceilândia",
+    "regiao": "Oeste",
+    "motivo": "Rotina",
+    "amostras": 96,
+    "satisfatorias": 88,
+    "ctotais": 8,
+    "estabelecimentos": 37
+  },
+  {
+    "ano": "2026",
+    "mes": "Fev",
+    "ra": "Brazlândia",
+    "regiao": "Oeste",
+    "motivo": "Investigação",
+    "amostras": 55,
+    "satisfatorias": 49,
+    "ctotais": 6,
+    "estabelecimentos": 21
+  },
+  {
+    "ano": "2026",
+    "mes": "Mar",
+    "ra": "Taguatinga",
+    "regiao": "Sudoeste",
+    "motivo": "Rotina",
+    "amostras": 92,
+    "satisfatorias": 86,
+    "ctotais": 6,
+    "estabelecimentos": 34
+  },
+  {
+    "ano": "2026",
+    "mes": "Mar",
+    "ra": "Recanto das Emas",
+    "regiao": "Sudoeste",
+    "motivo": "Rotina",
+    "amostras": 70,
+    "satisfatorias": 66,
+    "ctotais": 4,
+    "estabelecimentos": 26
+  },
+  {
+    "ano": "2026",
+    "mes": "Abr",
+    "ra": "Planaltina",
+    "regiao": "Norte",
+    "motivo": "Rotina",
+    "amostras": 88,
+    "satisfatorias": 81,
+    "ctotais": 7,
+    "estabelecimentos": 32
+  },
+  {
+    "ano": "2026",
+    "mes": "Abr",
+    "ra": "Santa Maria",
+    "regiao": "Sul",
+    "motivo": "Rotina",
+    "amostras": 69,
+    "satisfatorias": 64,
+    "ctotais": 5,
+    "estabelecimentos": 25
+  },
+  {
+    "ano": "2026",
+    "mes": "Mai",
+    "ra": "Gama",
+    "regiao": "Sul",
+    "motivo": "Rotina",
+    "amostras": 90,
+    "satisfatorias": 84,
+    "ctotais": 6,
+    "estabelecimentos": 33
+  },
+  {
+    "ano": "2026",
+    "mes": "Mai",
+    "ra": "Guará",
+    "regiao": "Centro-Sul",
+    "motivo": "Solicitação",
+    "amostras": 77,
+    "satisfatorias": 73,
+    "ctotais": 4,
+    "estabelecimentos": 29
+  },
+  {
+    "ano": "2026",
+    "mes": "Jun",
+    "ra": "Samambaia",
+    "regiao": "Sudoeste",
+    "motivo": "Rotina",
+    "amostras": 95,
+    "satisfatorias": 89,
+    "ctotais": 6,
+    "estabelecimentos": 35
+  },
+  {
+    "ano": "2026",
+    "mes": "Jun",
+    "ra": "Núcleo Bandeirante",
+    "regiao": "Centro-Sul",
+    "motivo": "Rotina",
+    "amostras": 61,
+    "satisfatorias": 58,
+    "ctotais": 3,
+    "estabelecimentos": 23
+  },
+  {
+    "ano": "2026",
+    "mes": "Jul",
+    "ra": "Sobradinho",
+    "regiao": "Norte",
+    "motivo": "Solicitação",
+    "amostras": 74,
+    "satisfatorias": 68,
+    "ctotais": 6,
+    "estabelecimentos": 28
+  },
+  {
+    "ano": "2026",
+    "mes": "Jul",
+    "ra": "Riacho Fundo",
+    "regiao": "Centro-Sul",
+    "motivo": "Rotina",
+    "amostras": 58,
+    "satisfatorias": 55,
+    "ctotais": 3,
+    "estabelecimentos": 22
+  },
+  {
+    "ano": "2026",
+    "mes": "Ago",
+    "ra": "Paranoá",
+    "regiao": "Leste",
+    "motivo": "Reclamação",
+    "amostras": 68,
+    "satisfatorias": 61,
+    "ctotais": 7,
+    "estabelecimentos": 25
+  },
+  {
+    "ano": "2026",
+    "mes": "Ago",
+    "ra": "Itapoã",
+    "regiao": "Leste",
+    "motivo": "Rotina",
+    "amostras": 64,
+    "satisfatorias": 59,
+    "ctotais": 5,
+    "estabelecimentos": 24
+  },
+  {
+    "ano": "2026",
+    "mes": "Set",
+    "ra": "São Sebastião",
+    "regiao": "Leste",
+    "motivo": "Rotina",
+    "amostras": 81,
+    "satisfatorias": 76,
+    "ctotais": 5,
+    "estabelecimentos": 30
+  },
+  {
+    "ano": "2026",
+    "mes": "Set",
+    "ra": "Vicente Pires",
+    "regiao": "Sudoeste",
+    "motivo": "Reclamação",
+    "amostras": 66,
+    "satisfatorias": 62,
+    "ctotais": 4,
+    "estabelecimentos": 24
+  }
+]
