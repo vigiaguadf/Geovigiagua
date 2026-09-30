@@ -1,0 +1,29 @@
+GeoVIGIÁGUA DF — MAPA INTERATIVO v1.2 AUTOCONTIDA COMPLETA
+
+ARQUIVOS PARA A RAIZ DO GITHUB
+- mapa.html (substituir)
+- mapa_dados.json (substituir)
+- limites_ra.geojson (novo)
+- limite_df.geojson (novo)
+
+Mantenha style.css e os demais arquivos do portal.
+
+RECURSOS
+- 35 Regiões Administrativas da camada fornecida pelo usuário
+- Base original EPSG:31983, reprojetada para EPSG:4326
+- Limite geral do DF
+- 7 Regiões de Saúde da SES-DF
+- filtro Região de Saúde -> RA
+- zoom automático por RA
+- coroplético dinâmico
+- círculos proporcionais opcionais
+- heatmap opcional
+- mapa claro / satélite
+- pop-up e ficha territorial
+- legenda dinâmica
+
+IMPORTANTE
+Os valores de mapa_dados.json são DEMONSTRATIVOS. RAs sem valor demonstrativo aparecem como “Sem dados”. Não apresentar esses números como resultados oficiais.
+
+REGIONALIZAÇÃO DA SAÚDE
+A associação das 35 RAs às sete Regiões de Saúde foi compatibilizada com o Plano Distrital de Saúde 2024–2027 da SES-DF.
