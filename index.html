@@ -1,1 +1,36 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Início | GeoVIGIÁGUA DF</title><link rel="stylesheet" href="style.css"></head><body><header><h1>GeoVIGIÁGUA DF</h1><p>Plataforma de Inteligência Territorial para a Vigilância da Qualidade da Água</p></header><nav><a href="index.html">INÍCIO</a><a href="painel.html">PAINEL</a><a href="mapa.html">MAPA INTERATIVO</a><a href="dados.html">DADOS & DOWNLOADS</a><a href="relatorios.html">RELATÓRIOS</a><a href="metodologia.html">METODOLOGIA</a><a href="sobre.html">SOBRE</a></nav><main class="container"><section class="hero"><h2>Inteligência territorial aplicada à qualidade da água</h2><p>Portal demonstrativo integrando indicadores, WebGIS, dados públicos, relatórios e metodologia.</p><a class="btn" href="painel.html">Explorar painel</a> <a class="btn" href="mapa.html" style="background:#15966b">Abrir WebGIS</a></section><section class="kpis"><div class="kpi"><b>1.808</b><span>Amostras</span></div><div class="kpi"><b>1.685</b><span>Satisfatórias*</span></div><div class="kpi"><b>123</b><span>C. totais — presença</span></div><div class="kpi"><b>34</b><span>RAs</span></div><div class="kpi"><b>694</b><span>Estabelecimentos</span></div></section><h2>Explore a plataforma</h2><section class="grid"><div class="panel"><h3>Painel</h3><p>Indicadores e séries temporais.</p></div><div class="panel"><h3>WebGIS</h3><p>Análise territorial interativa.</p></div><div class="panel"><h3>Dados & Downloads</h3><p>Bases públicas e metadados.</p></div><div class="panel"><h3>Relatórios</h3><p>Boletins e documentos técnicos.</p></div><div class="panel"><h3>Metodologia</h3><p>ETL, SIG, BI e governança.</p></div><div class="panel"><h3>Sobre</h3><p>Contexto institucional e objetivos.</p></div></section></main><footer><b>GeoVIGIÁGUA DF</b> • Protótipo acadêmico público • Dados agregados.</footer></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123A5A">
+  <meta name="description" content="GeoVIGIÁGUA DF: inteligência territorial aplicada à vigilância da qualidade da água para consumo humano no Distrito Federal.">
+  <title>GeoVIGIÁGUA DF | Portal Integrado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/style.css?v=2.0.0">
+</head>
+<body>
+  <a class="skip-link" href="#app-view">Ir para o conteúdo</a>
+  <div class="mobile-scrim" id="mobile-scrim" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+    <a class="brand" href="#inicio" aria-label="GeoVIGIÁGUA DF, página inicial"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-wordmark">GeoVIGIÁGUA<small>DISTRITO FEDERAL</small></span></a>
+    <div class="nav-caption">AMBIENTE PÚBLICO</div>
+    <nav class="main-nav" id="main-nav" aria-label="Módulos do portal"></nav>
+    <div class="nav-caption">AMBIENTE INSTITUCIONAL</div>
+    <nav class="main-nav" id="restricted-nav" aria-label="Módulos restritos"></nav>
+    <div class="sidebar-bottom"><div class="public-badge"><span></span><div><strong>Portal público</strong><small>Dados agregados e autorizados</small></div></div><small class="institution">GVAFNB / DIVAL / SVS / SES-DF</small></div>
+  </aside>
+  <main class="main-shell">
+    <header class="topbar"><button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir navegação" aria-expanded="false" aria-controls="sidebar"><span></span><span></span><span></span></button><div class="crumb"><span>VIGILÂNCIA AMBIENTAL</span><b>/</b><strong id="current-module">INÍCIO</strong></div><div class="topbar-right"><span class="public-live"><i></i> PORTAL PÚBLICO</span><span class="topbar-separator"></span><span id="data-version">DF · BRASIL</span></div></header>
+    <div id="app-view" class="app-view" tabindex="-1" aria-live="polite"></div>
+  </main>
+  <div class="modal-backdrop" id="modal" hidden><section class="dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" type="button" aria-label="Fechar janela">×</button><div id="modal-body"></div></section></div>
+  <noscript><p class="noscript">O GeoVIGIÁGUA DF precisa de JavaScript habilitado.</p></noscript>
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="vendor/chartjs/chart.umd.js"></script>
+  <script type="module" src="js/app.js?v=2.0.0"></script>
+</body>
+</html>

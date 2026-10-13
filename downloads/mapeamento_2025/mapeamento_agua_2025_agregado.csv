@@ -1,0 +1,95 @@
+﻿ano;mes;ra_cira;ra_nome;regiao_saude;motivo_coleta;amostras;com_resultado_microbiologico;satisfatorias_microbiologicas;coliformes_totais_presenca;coliformes_totais_ausencia;e_coli_presenca;e_coli_ausencia
+2025;;1;Plano Piloto;Central;Não informado;3;0;0;0;0;0;0
+2025;1;1;Plano Piloto;Central;Outros;1;0;0;0;0;0;0
+2025;1;1;Plano Piloto;Central;Rotina;30;0;0;0;0;0;0
+2025;1;2;Gama;Sul;Ouvidoria;3;0;0;0;0;0;0
+2025;1;9;Ceilândia;Oeste;Rotina;3;0;0;0;0;0;0
+2025;1;11;Cruzeiro;Central;Ouvidoria;3;0;0;0;0;0;0
+2025;1;11;Cruzeiro;Central;Rotina;2;0;0;0;0;0;0
+2025;1;14;São Sebastião;Leste;Surto;4;0;0;0;0;0;0
+2025;1;27;Jardim Botânico;Leste;Surto;12;0;0;0;0;0;0
+2025;2;1;Plano Piloto;Central;Não informado;48;0;0;0;0;0;0
+2025;2;1;Plano Piloto;Central;Rotina;7;0;0;0;0;0;0
+2025;2;2;Gama;Sul;Não informado;8;0;0;0;0;0;0
+2025;2;2;Gama;Sul;Rotina;10;0;0;0;0;0;0
+2025;2;3;Taguatinga;Sudoeste;Não informado;10;0;0;0;0;0;0
+2025;2;3;Taguatinga;Sudoeste;Rotina;10;0;0;0;0;0;0
+2025;2;4;Brazlândia;Oeste;Não informado;18;0;0;0;0;0;0
+2025;2;5;Sobradinho;Norte;Não informado;8;0;0;0;0;0;0
+2025;2;5;Sobradinho;Norte;Rotina;10;0;0;0;0;0;0
+2025;2;6;Planaltina;Norte;Não informado;15;0;0;0;0;0;0
+2025;2;7;Paranoá;Leste;Não informado;26;0;0;0;0;0;0
+2025;2;8;Núcleo Bandeirante;Centro-Sul;Não informado;10;0;0;0;0;0;0
+2025;2;9;Ceilândia;Oeste;Não informado;10;0;0;0;0;0;0
+2025;2;9;Ceilândia;Oeste;Rotina;10;0;0;0;0;0;0
+2025;2;10;Guará;Centro-Sul;Não informado;20;0;0;0;0;0;0
+2025;2;11;Cruzeiro;Central;Não informado;7;0;0;0;0;0;0
+2025;2;11;Cruzeiro;Central;Rotina;10;0;0;0;0;0;0
+2025;2;12;Samambaia;Sudoeste;Não informado;10;0;0;0;0;0;0
+2025;2;12;Samambaia;Sudoeste;Rotina;10;0;0;0;0;0;0
+2025;2;13;Santa Maria;Sul;Não informado;20;0;0;0;0;0;0
+2025;2;15;Recanto das Emas;Sudoeste;Não informado;14;0;0;0;0;0;0
+2025;2;18;Lago Norte;Central;Não informado;10;0;0;0;0;0;0
+2025;2;18;Lago Norte;Central;Rotina;3;0;0;0;0;0;0
+2025;2;19;Candangolândia;Centro-Sul;Não informado;10;0;0;0;0;0;0
+2025;2;20;Águas Claras;Sudoeste;Não informado;3;0;0;0;0;0;0
+2025;2;26;Sobradinho II;Norte;Solicitação;3;0;0;0;0;0;0
+2025;2;28;Itapoã;Leste;Não informado;3;0;0;0;0;0;0
+2025;2;31;Fercal;Norte;Não informado;5;0;0;0;0;0;0
+2025;2;34;Arapoanga;Norte;Rotina;7;0;0;0;0;0;0
+2025;2;34;Arapoanga;Norte;Solicitação;3;0;0;0;0;0;0
+2025;3;1;Plano Piloto;Central;Não informado;69;0;0;0;0;0;0
+2025;3;2;Gama;Sul;Não informado;20;0;0;0;0;0;0
+2025;3;3;Taguatinga;Sudoeste;Não informado;18;0;0;0;0;0;0
+2025;3;4;Brazlândia;Oeste;Não informado;10;0;0;0;0;0;0
+2025;3;5;Sobradinho;Norte;Não informado;12;0;0;0;0;0;0
+2025;3;6;Planaltina;Norte;Não informado;13;0;0;0;0;0;0
+2025;3;7;Paranoá;Leste;Não informado;13;0;0;0;0;0;0
+2025;3;8;Núcleo Bandeirante;Centro-Sul;Não informado;10;0;0;0;0;0;0
+2025;3;9;Ceilândia;Oeste;Não informado;32;0;0;0;0;0;0
+2025;3;10;Guará;Centro-Sul;Não informado;8;0;0;0;0;0;0
+2025;3;12;Samambaia;Sudoeste;Não informado;20;0;0;0;0;0;0
+2025;3;13;Santa Maria;Sul;Não informado;10;0;0;0;0;0;0
+2025;3;14;São Sebastião;Leste;Não informado;20;0;0;0;0;0;0
+2025;3;15;Recanto das Emas;Sudoeste;Não informado;18;0;0;0;0;0;0
+2025;3;22;Sudoeste/Octogonal;Central;Não informado;5;0;0;0;0;0;0
+2025;3;26;Sobradinho II;Norte;Não informado;10;0;0;0;0;0;0
+2025;4;1;Plano Piloto;Central;Não informado;75;0;0;0;0;0;0
+2025;4;2;Gama;Sul;Não informado;16;0;0;0;0;0;0
+2025;4;3;Taguatinga;Sudoeste;Não informado;20;0;0;0;0;0;0
+2025;4;4;Brazlândia;Oeste;Não informado;20;0;0;0;0;0;0
+2025;4;5;Sobradinho;Norte;Não informado;10;0;0;0;0;0;0
+2025;4;6;Planaltina;Norte;Não informado;17;0;0;0;0;0;0
+2025;4;7;Paranoá;Leste;Não informado;20;0;0;0;0;0;0
+2025;4;8;Núcleo Bandeirante;Centro-Sul;Não informado;5;0;0;0;0;0;0
+2025;4;9;Ceilândia;Oeste;Não informado;20;0;0;0;0;0;0
+2025;4;10;Guará;Centro-Sul;Não informado;10;0;0;0;0;0;0
+2025;4;11;Cruzeiro;Central;Não informado;2;0;0;0;0;0;0
+2025;4;12;Samambaia;Sudoeste;Não informado;18;0;0;0;0;0;0
+2025;4;13;Santa Maria;Sul;Não informado;10;0;0;0;0;0;0
+2025;4;14;São Sebastião;Leste;Não informado;28;0;0;0;0;0;0
+2025;4;15;Recanto das Emas;Sudoeste;Não informado;20;0;0;0;0;0;0
+2025;4;17;Riacho Fundo;Centro-Sul;Não informado;8;0;0;0;0;0;0
+2025;4;22;Sudoeste/Octogonal;Central;Não informado;2;0;0;0;0;0;0
+2025;4;24;Park Way;Centro-Sul;Não informado;5;0;0;0;0;0;0
+2025;4;26;Sobradinho II;Norte;Não informado;7;0;0;0;0;0;0
+2025;4;28;Itapoã;Leste;Não informado;5;0;0;0;0;0;0
+2025;5;1;Plano Piloto;Central;Não informado;51;0;0;0;0;0;0
+2025;5;2;Gama;Sul;Não informado;15;0;0;0;0;0;0
+2025;5;3;Taguatinga;Sudoeste;Não informado;18;0;0;0;0;0;0
+2025;5;4;Brazlândia;Oeste;Não informado;20;0;0;0;0;0;0
+2025;5;5;Sobradinho;Norte;Não informado;13;0;0;0;0;0;0
+2025;5;6;Planaltina;Norte;Não informado;25;0;0;0;0;0;0
+2025;5;7;Paranoá;Leste;Não informado;20;0;0;0;0;0;0
+2025;5;8;Núcleo Bandeirante;Centro-Sul;Não informado;10;0;0;0;0;0;0
+2025;5;9;Ceilândia;Oeste;Não informado;23;0;0;0;0;0;0
+2025;5;11;Cruzeiro;Central;Não informado;10;0;0;0;0;0;0
+2025;5;12;Samambaia;Sudoeste;Não informado;15;0;0;0;0;0;0
+2025;5;13;Santa Maria;Sul;Não informado;28;0;0;0;0;0;0
+2025;5;14;São Sebastião;Leste;Não informado;21;0;0;0;0;0;0
+2025;5;15;Recanto das Emas;Sudoeste;Não informado;20;0;0;0;0;0;0
+2025;5;16;Lago Sul;Central;Não informado;8;0;0;0;0;0;0
+2025;5;17;Riacho Fundo;Centro-Sul;Não informado;10;0;0;0;0;0;0
+2025;5;20;Águas Claras;Sudoeste;Não informado;20;0;0;0;0;0;0
+2025;5;26;Sobradinho II;Norte;Não informado;8;0;0;0;0;0;0
+2025;5;28;Itapoã;Leste;Não informado;7;0;0;0;0;0;0

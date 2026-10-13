@@ -1,0 +1,6 @@
+{
+  "versao": "2.0.0",
+  "instrucoes": "Inclua o PDF autorizado em downloads/relatorios/ e acrescente um objeto em itens: {\"titulo\", \"categoria\", \"ano\", \"edicao\", \"periodo\", \"descricao\", \"publicacao\" (AAAA-MM-DD), \"pdf\" (caminho relativo)}.",
+  "categorias": ["Boletim", "Relatório quadrimestral", "Relatório anual", "Nota técnica", "Documento metodológico", "Material informativo"],
+  "itens": []
+}

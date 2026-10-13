@@ -1,0 +1,43 @@
+{
+  "id": "mapeamento_2025",
+  "nome": "Mapeamento da Água 2025 · base agregada",
+  "tema": "Monitoramento",
+  "descricao": "1.347 amostras distintas agregadas por RA, Região de Saúde, mês e motivo, com contagens de coliformes totais e E. coli. Esta planilha não traz resultados microbiológicos.",
+  "fonte": "GVAFNB/DIVAL/SVS/SES-DF · Mapeamento_Agua_2025.xlsx (aba Cronograma)",
+  "referencia": "2025-01 a 2025-05",
+  "escala": "Agregado por Região Administrativa",
+  "src": "—",
+  "geometria": "Tabela (agregada por RA)",
+  "atualizacao": "2026-10-13",
+  "licenca": "Dados públicos agregados; citar GVAFNB/DIVAL/SVS/SES-DF.",
+  "restricoes": "Sem endereços, coordenadas, códigos de amostra ou equipes. Dados preliminares pendentes de validação institucional.",
+  "acesso": "Público",
+  "anos": [
+    2025
+  ],
+  "camada": "monitoramento",
+  "formatos": {
+    "xlsx": {
+      "href": "downloads/mapeamento_2025/mapeamento_agua_2025_agregado.xlsx",
+      "tamanho": "11,2 KB"
+    },
+    "csv": {
+      "href": "downloads/mapeamento_2025/mapeamento_agua_2025_agregado.csv",
+      "tamanho": "5,4 KB"
+    }
+  },
+  "qualidade": {
+    "ano": 2025,
+    "linhas": 1349,
+    "ra_por_espacial": 981,
+    "ra_atributo_diverge_da_espacial": 54,
+    "coordenada_suspeita_prevaleceu_atributo": 16,
+    "ra_por_atributo": 366,
+    "sem_codigo_amostra": 530,
+    "linhas_repetidas_mesma_amostra": 2,
+    "sem_coordenada": 350,
+    "sem_data": 3,
+    "amostras_distintas": 1347
+  },
+  "versao_catalogo": "2.0.0"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "lagos_barragens",
+  "nome": "Lagos e Barragens",
+  "tema": "Hidrografia",
+  "descricao": "Espelhos d'água do DF: lagoa (1.607), alagado (217), rio (111), lago (5).",
+  "fonte": "SEGETH/SEDUH-DF · Hidrografia Geral",
+  "referencia": "Criação 12/12/2017; modificação 18/10/2019",
+  "escala": "Não informada",
+  "src": "SIRGAS 2000 / UTM 23S (EPSG:31983)",
+  "geometria": "Polígono (1.940 feições)",
+  "atualizacao": "2019-10-18",
+  "licenca": "Produto de autoria da SEGETH/SEDUH-DF. Metadados da fonte: uso próprio, vedada a reprodução e comercialização para terceiros; a SEDUH não se responsabiliza pelo uso impróprio.",
+  "restricoes": "Download não disponibilizado: a licença da fonte veda reprodução para terceiros. Visualização simplificada no mapa, com atribuição. Obtenha o arquivo junto à SEDUH-DF.",
+  "acesso": "Visualização",
+  "anos": [
+    2019
+  ],
+  "camada": "lagos",
+  "formatos": {},
+  "versao_catalogo": "2.0.0"
+}

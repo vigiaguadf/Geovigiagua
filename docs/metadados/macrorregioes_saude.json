@@ -1,0 +1,28 @@
+{
+  "id": "macrorregioes_saude",
+  "nome": "Macrorregiões de Saúde do DF",
+  "tema": "Saúde",
+  "descricao": "Limites das três Macrorregiões de Saúde.",
+  "fonte": "Arquivo 'Saúde/Macrorregiões de Saúde.geojson' fornecido ao projeto; origem não documentada",
+  "referencia": "Não informada na fonte",
+  "escala": "Não informada",
+  "src": "WGS 84 (EPSG:4326)",
+  "geometria": "Polígono (3 feições)",
+  "atualizacao": "2026-10-13",
+  "licenca": "Não informada; validar com SES-DF.",
+  "restricoes": "Nenhuma informada.",
+  "acesso": "Público",
+  "anos": [],
+  "camada": "macro",
+  "formatos": {
+    "shp": {
+      "href": "downloads/saude/macrorregioes_saude_df.zip",
+      "tamanho": "304,2 KB"
+    },
+    "geojson": {
+      "href": "Saúde/Macrorregiões de Saúde.geojson",
+      "tamanho": "1,3 MB"
+    }
+  },
+  "versao_catalogo": "2.0.0"
+}

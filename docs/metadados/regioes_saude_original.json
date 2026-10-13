@@ -1,0 +1,24 @@
+{
+  "id": "regioes_saude_original",
+  "nome": "Regiões de Saúde · arquivo original",
+  "tema": "Saúde",
+  "descricao": "GeoJSON de Regiões de Saúde recebido pelo projeto, mantido sem alteração.",
+  "fonte": "Arquivo 'Saúde/Regiões de Saúde.geojson' fornecido ao projeto; origem não documentada",
+  "referencia": "Não informada na fonte",
+  "escala": "Não informada",
+  "src": "WGS 84 (EPSG:4326)",
+  "geometria": "Polígono (7 feições)",
+  "atualizacao": "—",
+  "licenca": "Não informada; validar com SES-DF.",
+  "restricoes": "Nenhuma informada.",
+  "acesso": "Público",
+  "anos": [],
+  "camada": null,
+  "formatos": {
+    "geojson": {
+      "href": "Saúde/Regiões de Saúde.geojson",
+      "tamanho": "1,9 MB"
+    }
+  },
+  "versao_catalogo": "2.0.0"
+}

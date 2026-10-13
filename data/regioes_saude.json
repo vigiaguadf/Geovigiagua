@@ -1,0 +1,367 @@
+{
+  "versao": "2.0.0",
+  "status": "Preliminar: requer validação institucional da GVAFNB.",
+  "metodo": "Tabela versionada no script de build (CORRESPONDENCIA_RS), compatível com o Plano Distrital de Saúde 2024–2027 da SES-DF. Conferida contra o GeoJSON original de Regiões de Saúde pela maior área de interseção.",
+  "divergencias": [],
+  "regioes": [
+    {
+      "nome": "Central",
+      "macrorregiao": "Macrorregião 2",
+      "ras": [
+        1,
+        11,
+        16,
+        18,
+        22,
+        23
+      ]
+    },
+    {
+      "nome": "Centro-Sul",
+      "macrorregiao": "Macrorregião 2",
+      "ras": [
+        8,
+        10,
+        17,
+        19,
+        21,
+        24,
+        25,
+        29
+      ]
+    },
+    {
+      "nome": "Leste",
+      "macrorregiao": "Macrorregião 3",
+      "ras": [
+        7,
+        14,
+        27,
+        28
+      ]
+    },
+    {
+      "nome": "Norte",
+      "macrorregiao": "Macrorregião 3",
+      "ras": [
+        5,
+        6,
+        26,
+        31,
+        34
+      ]
+    },
+    {
+      "nome": "Oeste",
+      "macrorregiao": "Macrorregião 1",
+      "ras": [
+        4,
+        9,
+        32
+      ]
+    },
+    {
+      "nome": "Sudoeste",
+      "macrorregiao": "Macrorregião 1",
+      "ras": [
+        3,
+        12,
+        15,
+        20,
+        30,
+        33,
+        35
+      ]
+    },
+    {
+      "nome": "Sul",
+      "macrorregiao": "Macrorregião 2",
+      "ras": [
+        2,
+        13
+      ]
+    }
+  ],
+  "ras": [
+    {
+      "cira": 1,
+      "codigo": "RA-I",
+      "nome": "Plano Piloto",
+      "regiao_saude": "Central",
+      "regiao_poligono_original": "Central",
+      "area_km2": 437.2
+    },
+    {
+      "cira": 2,
+      "codigo": "RA-II",
+      "nome": "Gama",
+      "regiao_saude": "Sul",
+      "regiao_poligono_original": "Sul",
+      "area_km2": 275.41
+    },
+    {
+      "cira": 3,
+      "codigo": "RA-III",
+      "nome": "Taguatinga",
+      "regiao_saude": "Sudoeste",
+      "regiao_poligono_original": "Sudoeste",
+      "area_km2": 63.04
+    },
+    {
+      "cira": 4,
+      "codigo": "RA-IV",
+      "nome": "Brazlândia",
+      "regiao_saude": "Oeste",
+      "regiao_poligono_original": "Oeste",
+      "area_km2": 470.18
+    },
+    {
+      "cira": 5,
+      "codigo": "RA-V",
+      "nome": "Sobradinho",
+      "regiao_saude": "Norte",
+      "regiao_poligono_original": "Norte",
+      "area_km2": 193.53
+    },
+    {
+      "cira": 6,
+      "codigo": "RA-VI",
+      "nome": "Planaltina",
+      "regiao_saude": "Norte",
+      "regiao_poligono_original": "Norte",
+      "area_km2": 1509.41
+    },
+    {
+      "cira": 7,
+      "codigo": "RA-VII",
+      "nome": "Paranoá",
+      "regiao_saude": "Leste",
+      "regiao_poligono_original": "Leste",
+      "area_km2": 830.25
+    },
+    {
+      "cira": 8,
+      "codigo": "RA-VIII",
+      "nome": "Núcleo Bandeirante",
+      "regiao_saude": "Centro-Sul",
+      "regiao_poligono_original": "Centro-Sul",
+      "area_km2": 5.05
+    },
+    {
+      "cira": 9,
+      "codigo": "RA-IX",
+      "nome": "Ceilândia",
+      "regiao_saude": "Oeste",
+      "regiao_poligono_original": "Oeste",
+      "area_km2": 192.66
+    },
+    {
+      "cira": 10,
+      "codigo": "RA-X",
+      "nome": "Guará",
+      "regiao_saude": "Centro-Sul",
+      "regiao_poligono_original": "Centro-Sul",
+      "area_km2": 25.22
+    },
+    {
+      "cira": 11,
+      "codigo": "RA-XI",
+      "nome": "Cruzeiro",
+      "regiao_saude": "Central",
+      "regiao_poligono_original": "Central",
+      "area_km2": 3.19
+    },
+    {
+      "cira": 12,
+      "codigo": "RA-XII",
+      "nome": "Samambaia",
+      "regiao_saude": "Sudoeste",
+      "regiao_poligono_original": "Sudoeste",
+      "area_km2": 99.99
+    },
+    {
+      "cira": 13,
+      "codigo": "RA-XIII",
+      "nome": "Santa Maria",
+      "regiao_saude": "Sul",
+      "regiao_poligono_original": "Sul",
+      "area_km2": 130.89
+    },
+    {
+      "cira": 14,
+      "codigo": "RA-XIV",
+      "nome": "São Sebastião",
+      "regiao_saude": "Leste",
+      "regiao_poligono_original": "Leste",
+      "area_km2": 262.07
+    },
+    {
+      "cira": 15,
+      "codigo": "RA-XV",
+      "nome": "Recanto das Emas",
+      "regiao_saude": "Sudoeste",
+      "regiao_poligono_original": "Sudoeste",
+      "area_km2": 93.11
+    },
+    {
+      "cira": 16,
+      "codigo": "RA-XVI",
+      "nome": "Lago Sul",
+      "regiao_saude": "Central",
+      "regiao_poligono_original": "Central",
+      "area_km2": 76.05
+    },
+    {
+      "cira": 17,
+      "codigo": "RA-XVII",
+      "nome": "Riacho Fundo",
+      "regiao_saude": "Centro-Sul",
+      "regiao_poligono_original": "Centro-Sul",
+      "area_km2": 17.78
+    },
+    {
+      "cira": 18,
+      "codigo": "RA-XVIII",
+      "nome": "Lago Norte",
+      "regiao_saude": "Central",
+      "regiao_poligono_original": "Central",
+      "area_km2": 75.49
+    },
+    {
+      "cira": 19,
+      "codigo": "RA-XIX",
+      "nome": "Candangolândia",
+      "regiao_saude": "Centro-Sul",
+      "regiao_poligono_original": "Centro-Sul",
+      "area_km2": 6.6
+    },
+    {
+      "cira": 20,
+      "codigo": "RA-XX",
+      "nome": "Águas Claras",
+      "regiao_saude": "Sudoeste",
+      "regiao_poligono_original": "Sudoeste",
+      "area_km2": 9.19
+    },
+    {
+      "cira": 21,
+      "codigo": "RA-XXI",
+      "nome": "Riacho Fundo II",
+      "regiao_saude": "Centro-Sul",
+      "regiao_poligono_original": "Centro-Sul",
+      "area_km2": 38.47
+    },
+    {
+      "cira": 22,
+      "codigo": "RA-XXII",
+      "nome": "Sudoeste/Octogonal",
+      "regiao_saude": "Central",
+      "regiao_poligono_original": "Central",
+      "area_km2": 6.47
+    },
+    {
+      "cira": 23,
+      "codigo": "RA-XXIII",
+      "nome": "Varjão",
+      "regiao_saude": "Central",
+      "regiao_poligono_original": "Central",
+      "area_km2": 1.63
+    },
+    {
+      "cira": 24,
+      "codigo": "RA-XXIV",
+      "nome": "Park Way",
+      "regiao_saude": "Centro-Sul",
+      "regiao_poligono_original": "Centro-Sul",
+      "area_km2": 118.41
+    },
+    {
+      "cira": 25,
+      "codigo": "RA-XXV",
+      "nome": "SCIA/Estrutural",
+      "regiao_saude": "Centro-Sul",
+      "regiao_poligono_original": "Centro-Sul",
+      "area_km2": 7.39
+    },
+    {
+      "cira": 26,
+      "codigo": "RA-XXVI",
+      "nome": "Sobradinho II",
+      "regiao_saude": "Norte",
+      "regiao_poligono_original": "Norte",
+      "area_km2": 181.35
+    },
+    {
+      "cira": 27,
+      "codigo": "RA-XXVII",
+      "nome": "Jardim Botânico",
+      "regiao_saude": "Leste",
+      "regiao_poligono_original": "Leste",
+      "area_km2": 290.61
+    },
+    {
+      "cira": 28,
+      "codigo": "RA-XXVIII",
+      "nome": "Itapoã",
+      "regiao_saude": "Leste",
+      "regiao_poligono_original": "Leste",
+      "area_km2": 34.3
+    },
+    {
+      "cira": 29,
+      "codigo": "RA-XXIX",
+      "nome": "SIA",
+      "regiao_saude": "Centro-Sul",
+      "regiao_poligono_original": "Centro-Sul",
+      "area_km2": 29.05
+    },
+    {
+      "cira": 30,
+      "codigo": "RA-XXX",
+      "nome": "Vicente Pires",
+      "regiao_saude": "Sudoeste",
+      "regiao_poligono_original": "Sudoeste",
+      "area_km2": 42.88
+    },
+    {
+      "cira": 31,
+      "codigo": "RA-XXXI",
+      "nome": "Fercal",
+      "regiao_saude": "Norte",
+      "regiao_poligono_original": "Norte",
+      "area_km2": 154.38
+    },
+    {
+      "cira": 32,
+      "codigo": "RA-XXXII",
+      "nome": "Sol Nascente/Pôr do Sol",
+      "regiao_saude": "Oeste",
+      "regiao_poligono_original": "Oeste",
+      "area_km2": 40.49
+    },
+    {
+      "cira": 33,
+      "codigo": "RA-XXXIII",
+      "nome": "Arniqueira",
+      "regiao_saude": "Sudoeste",
+      "regiao_poligono_original": "Sudoeste",
+      "area_km2": 13.36
+    },
+    {
+      "cira": 34,
+      "codigo": "RA-XXXIV",
+      "nome": "Arapoanga",
+      "regiao_saude": "Norte",
+      "regiao_poligono_original": "Norte",
+      "area_km2": 21.99
+    },
+    {
+      "cira": 35,
+      "codigo": "RA-XXXV",
+      "nome": "Água Quente",
+      "regiao_saude": "Sudoeste",
+      "regiao_poligono_original": "Sudoeste",
+      "area_km2": 9.51
+    }
+  ]
+}

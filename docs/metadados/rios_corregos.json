@@ -1,0 +1,21 @@
+{
+  "id": "rios_corregos",
+  "nome": "Rios e Córregos",
+  "tema": "Hidrografia",
+  "descricao": "Hidrografia linear do DF: rio (51.741), conexão (5.635), córrego (5.484), canal (939), sangradouro (319).",
+  "fonte": "SEGETH/SEDUH-DF · Hidrografia Geral",
+  "referencia": "Criação 12/12/2017; modificação 18/10/2019",
+  "escala": "Não informada",
+  "src": "SIRGAS 2000 / UTM 23S (EPSG:31983)",
+  "geometria": "Linha (64.118 feições)",
+  "atualizacao": "2019-10-18",
+  "licenca": "Produto de autoria da SEGETH/SEDUH-DF. Metadados da fonte: uso próprio, vedada a reprodução e comercialização para terceiros; a SEDUH não se responsabiliza pelo uso impróprio.",
+  "restricoes": "Download não disponibilizado: a licença da fonte veda reprodução para terceiros. Visualização simplificada no mapa, com atribuição. Obtenha o arquivo junto à SEDUH-DF.",
+  "acesso": "Visualização",
+  "anos": [
+    2019
+  ],
+  "camada": "rios",
+  "formatos": {},
+  "versao_catalogo": "2.0.0"
+}

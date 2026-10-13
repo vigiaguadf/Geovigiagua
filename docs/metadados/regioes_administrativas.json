@@ -1,0 +1,30 @@
+{
+  "id": "regioes_administrativas",
+  "nome": "Regiões Administrativas do DF",
+  "tema": "Limites territoriais",
+  "descricao": "Limites das 35 Regiões Administrativas com código (RA-I a RA-XXXV), nome oficial, área e Região de Saúde correspondente.",
+  "fonte": "SEGETH/SEDUH-DF · SITURB (pacote regioes_administrativas.zip fornecido ao projeto)",
+  "referencia": "2023 (edição de 15/05/2023)",
+  "escala": "Cadastral (não informada na fonte)",
+  "src": "SIRGAS 2000 / UTM 23S (EPSG:31983) na fonte; downloads em EPSG:4326",
+  "geometria": "Polígono (35 feições)",
+  "atualizacao": "2026-10-13",
+  "licenca": "Dado público do GDF; citar SEGETH/SEDUH-DF como fonte.",
+  "restricoes": "Nenhuma informada na fonte.",
+  "acesso": "Público",
+  "anos": [
+    2023
+  ],
+  "camada": "ra",
+  "formatos": {
+    "shp": {
+      "href": "downloads/regioes_administrativas/regioes_administrativas_df.zip",
+      "tamanho": "1,0 MB"
+    },
+    "geojson": {
+      "href": "downloads/regioes_administrativas/regioes_administrativas_df.geojson",
+      "tamanho": "2,4 MB"
+    }
+  },
+  "versao_catalogo": "2.0.0"
+}

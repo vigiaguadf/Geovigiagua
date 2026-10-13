@@ -1,0 +1,24 @@
+{
+  "id": "correspondencia_ra_rs",
+  "nome": "Correspondência RA – Região de Saúde",
+  "tema": "Saúde",
+  "descricao": "Tabela versionada que associa cada RA à Região de Saúde de maior sobreposição de área.",
+  "fonte": "GeoVIGIÁGUA DF (derivação espacial)",
+  "referencia": "2026-10-13",
+  "escala": "—",
+  "src": "—",
+  "geometria": "Tabela",
+  "atualizacao": "2026-10-13",
+  "licenca": "Uso livre com citação do GeoVIGIÁGUA DF.",
+  "restricoes": "Preliminar; requer validação institucional.",
+  "acesso": "Público",
+  "anos": [],
+  "camada": null,
+  "formatos": {
+    "csv": {
+      "href": "data/dados_publicos/correspondencia_ra_regiao_saude.csv",
+      "tamanho": "1,8 KB"
+    }
+  },
+  "versao_catalogo": "2.0.0"
+}

@@ -1,0 +1,10 @@
+GeoVIGIÁGUA DF · build 2026-10-13T01:19:16Z
+URLs legadas preservadas: Saúde/*.geojson, regioes_administrativas.zip, Limite do DF.zip.
+RA: 35 polígonos válidos, EPSG:31983 -> EPSG:4326; Regiões de Saúde: 7; Macrorregiões: 3.
+Hidrografia · Lagos e Barragens: 1940 feições, EPSG:31983, 0 geometrias inválidas.
+Hidrografia · Rios e Córregos: 64118 feições, EPSG:31983, 0 geometrias inválidas.
+Hidrografia web: 625 grupos de cursos principais/nomeados, 5 grupos de demais trechos, 1940 espelhos d'água.
+Monitoramento ano=2024, arquivo=Mapeamento_Agua_2024.xlsx, linhas=2595, ra_por_espacial=2541, ra_atributo_diverge_da_espacial=114, sem_coordenada=21, ra_por_atributo=51, coordenada_suspeita_prevaleceu_atributo=30, sem_codigo_amostra=2, linhas_repetidas_mesma_amostra=3, amostras_distintas=2592
+Monitoramento ano=2025, arquivo=Mapeamento_Agua_2025.xlsx, linhas=1349, ra_por_espacial=981, ra_atributo_diverge_da_espacial=54, coordenada_suspeita_prevaleceu_atributo=16, ra_por_atributo=366, sem_codigo_amostra=530, linhas_repetidas_mesma_amostra=2, sem_coordenada=350, sem_data=3, amostras_distintas=1347
+Monitoramento ano=2026, arquivo=Mapeamento_Agua_2026.xlsx, linhas=1808, ra_por_espacial=1768, ra_atributo_diverge_da_espacial=70, coordenada_suspeita_prevaleceu_atributo=34, ra_por_atributo=40, sem_coordenada=4, coordenada_fora_do_df=2, sem_data=4, amostras_distintas=1808
+Catálogo: 12 itens.

@@ -1,0 +1,358 @@
+{
+  "versao": "2.0.0",
+  "geradoEm": "2026-10-13T01:19:16Z",
+  "itens": [
+    {
+      "id": "regioes_administrativas",
+      "nome": "Regiões Administrativas do DF",
+      "tema": "Limites territoriais",
+      "descricao": "Limites das 35 Regiões Administrativas com código (RA-I a RA-XXXV), nome oficial, área e Região de Saúde correspondente.",
+      "fonte": "SEGETH/SEDUH-DF · SITURB (pacote regioes_administrativas.zip fornecido ao projeto)",
+      "referencia": "2023 (edição de 15/05/2023)",
+      "escala": "Cadastral (não informada na fonte)",
+      "src": "SIRGAS 2000 / UTM 23S (EPSG:31983) na fonte; downloads em EPSG:4326",
+      "geometria": "Polígono (35 feições)",
+      "atualizacao": "2026-10-13",
+      "licenca": "Dado público do GDF; citar SEGETH/SEDUH-DF como fonte.",
+      "restricoes": "Nenhuma informada na fonte.",
+      "acesso": "Público",
+      "anos": [
+        2023
+      ],
+      "camada": "ra",
+      "formatos": {
+        "shp": {
+          "href": "downloads/regioes_administrativas/regioes_administrativas_df.zip",
+          "tamanho": "1,0 MB"
+        },
+        "geojson": {
+          "href": "downloads/regioes_administrativas/regioes_administrativas_df.geojson",
+          "tamanho": "2,4 MB"
+        }
+      },
+      "metadados": "docs/metadados/regioes_administrativas.json"
+    },
+    {
+      "id": "limite_df",
+      "nome": "Limite do Distrito Federal",
+      "tema": "Limites territoriais",
+      "descricao": "Contorno do Distrito Federal (linha), com código IBGE da UF (53).",
+      "fonte": "Pacote 'Limite do DF.zip' fornecido ao projeto (atributos no padrão IBGE)",
+      "referencia": "Não informada na fonte",
+      "escala": "Não informada",
+      "src": "SIRGAS 2000 / UTM 23S (EPSG:31983) na fonte; downloads em EPSG:4326",
+      "geometria": "Linha (1 feição)",
+      "atualizacao": "2026-10-13",
+      "licenca": "Não informada na fonte; confirmar antes de redistribuir.",
+      "restricoes": "Nenhuma informada.",
+      "acesso": "Público",
+      "anos": [],
+      "camada": "limite",
+      "formatos": {
+        "shp": {
+          "href": "downloads/limite_df/limite_df.zip",
+          "tamanho": "108,3 KB"
+        },
+        "geojson": {
+          "href": "downloads/limite_df/limite_df.geojson",
+          "tamanho": "265,6 KB"
+        }
+      },
+      "metadados": "docs/metadados/limite_df.json"
+    },
+    {
+      "id": "regioes_saude",
+      "nome": "Regiões de Saúde do DF",
+      "tema": "Saúde",
+      "descricao": "Sete Regiões de Saúde (Central, Centro-Sul, Leste, Norte, Oeste, Sudoeste e Sul) reconstituídas pela dissolução dos 35 polígonos de RA conforme a tabela de correspondência v2.0.0.",
+      "fonte": "GeoVIGIÁGUA DF, a partir de SEGETH/SEDUH-DF (RAs) e da tabela RA–Região de Saúde",
+      "referencia": "2026-10-13",
+      "escala": "Cadastral (herdada das RAs)",
+      "src": "WGS 84 (EPSG:4326)",
+      "geometria": "Polígono (7 feições)",
+      "atualizacao": "2026-10-13",
+      "licenca": "Uso livre com citação; validar com SES-DF.",
+      "restricoes": "Preliminar; requer validação institucional.",
+      "acesso": "Público",
+      "anos": [],
+      "camada": "rs",
+      "formatos": {
+        "shp": {
+          "href": "downloads/saude/regioes_saude_df.zip",
+          "tamanho": "394,5 KB"
+        },
+        "geojson": {
+          "href": "downloads/saude/regioes_saude_df.geojson",
+          "tamanho": "888,2 KB"
+        }
+      },
+      "metadados": "docs/metadados/regioes_saude.json"
+    },
+    {
+      "id": "regioes_saude_original",
+      "nome": "Regiões de Saúde · arquivo original",
+      "tema": "Saúde",
+      "descricao": "GeoJSON de Regiões de Saúde recebido pelo projeto, mantido sem alteração.",
+      "fonte": "Arquivo 'Saúde/Regiões de Saúde.geojson' fornecido ao projeto; origem não documentada",
+      "referencia": "Não informada na fonte",
+      "escala": "Não informada",
+      "src": "WGS 84 (EPSG:4326)",
+      "geometria": "Polígono (7 feições)",
+      "atualizacao": "—",
+      "licenca": "Não informada; validar com SES-DF.",
+      "restricoes": "Nenhuma informada.",
+      "acesso": "Público",
+      "anos": [],
+      "camada": null,
+      "formatos": {
+        "geojson": {
+          "href": "Saúde/Regiões de Saúde.geojson",
+          "tamanho": "1,9 MB"
+        }
+      },
+      "metadados": "docs/metadados/regioes_saude_original.json"
+    },
+    {
+      "id": "macrorregioes_saude",
+      "nome": "Macrorregiões de Saúde do DF",
+      "tema": "Saúde",
+      "descricao": "Limites das três Macrorregiões de Saúde.",
+      "fonte": "Arquivo 'Saúde/Macrorregiões de Saúde.geojson' fornecido ao projeto; origem não documentada",
+      "referencia": "Não informada na fonte",
+      "escala": "Não informada",
+      "src": "WGS 84 (EPSG:4326)",
+      "geometria": "Polígono (3 feições)",
+      "atualizacao": "2026-10-13",
+      "licenca": "Não informada; validar com SES-DF.",
+      "restricoes": "Nenhuma informada.",
+      "acesso": "Público",
+      "anos": [],
+      "camada": "macro",
+      "formatos": {
+        "shp": {
+          "href": "downloads/saude/macrorregioes_saude_df.zip",
+          "tamanho": "304,2 KB"
+        },
+        "geojson": {
+          "href": "Saúde/Macrorregiões de Saúde.geojson",
+          "tamanho": "1,3 MB"
+        }
+      },
+      "metadados": "docs/metadados/macrorregioes_saude.json"
+    },
+    {
+      "id": "correspondencia_ra_rs",
+      "nome": "Correspondência RA – Região de Saúde",
+      "tema": "Saúde",
+      "descricao": "Tabela versionada que associa cada RA à Região de Saúde de maior sobreposição de área.",
+      "fonte": "GeoVIGIÁGUA DF (derivação espacial)",
+      "referencia": "2026-10-13",
+      "escala": "—",
+      "src": "—",
+      "geometria": "Tabela",
+      "atualizacao": "2026-10-13",
+      "licenca": "Uso livre com citação do GeoVIGIÁGUA DF.",
+      "restricoes": "Preliminar; requer validação institucional.",
+      "acesso": "Público",
+      "anos": [],
+      "camada": null,
+      "formatos": {
+        "csv": {
+          "href": "data/dados_publicos/correspondencia_ra_regiao_saude.csv",
+          "tamanho": "1,8 KB"
+        }
+      },
+      "metadados": "docs/metadados/correspondencia_ra_rs.json"
+    },
+    {
+      "id": "mapeamento_2024",
+      "nome": "Mapeamento da Água 2024 · base agregada",
+      "tema": "Monitoramento",
+      "descricao": "2.592 amostras distintas agregadas por RA, Região de Saúde, mês e motivo, com contagens de coliformes totais e E. coli.",
+      "fonte": "GVAFNB/DIVAL/SVS/SES-DF · Mapeamento_Agua_2024.xlsx (aba Cronograma)",
+      "referencia": "2024-04 a 2024-12",
+      "escala": "Agregado por Região Administrativa",
+      "src": "—",
+      "geometria": "Tabela (agregada por RA)",
+      "atualizacao": "2026-10-13",
+      "licenca": "Dados públicos agregados; citar GVAFNB/DIVAL/SVS/SES-DF.",
+      "restricoes": "Sem endereços, coordenadas, códigos de amostra ou equipes. Dados preliminares pendentes de validação institucional.",
+      "acesso": "Público",
+      "anos": [
+        2024
+      ],
+      "camada": "monitoramento",
+      "formatos": {
+        "xlsx": {
+          "href": "downloads/mapeamento_2024/mapeamento_agua_2024_agregado.xlsx",
+          "tamanho": "16,4 KB"
+        },
+        "csv": {
+          "href": "downloads/mapeamento_2024/mapeamento_agua_2024_agregado.csv",
+          "tamanho": "10,7 KB"
+        }
+      },
+      "qualidade": {
+        "ano": 2024,
+        "linhas": 2595,
+        "ra_por_espacial": 2541,
+        "ra_atributo_diverge_da_espacial": 114,
+        "sem_coordenada": 21,
+        "ra_por_atributo": 51,
+        "coordenada_suspeita_prevaleceu_atributo": 30,
+        "sem_codigo_amostra": 2,
+        "linhas_repetidas_mesma_amostra": 3,
+        "amostras_distintas": 2592
+      },
+      "metadados": "docs/metadados/mapeamento_2024.json"
+    },
+    {
+      "id": "mapeamento_2025",
+      "nome": "Mapeamento da Água 2025 · base agregada",
+      "tema": "Monitoramento",
+      "descricao": "1.347 amostras distintas agregadas por RA, Região de Saúde, mês e motivo, com contagens de coliformes totais e E. coli. Esta planilha não traz resultados microbiológicos.",
+      "fonte": "GVAFNB/DIVAL/SVS/SES-DF · Mapeamento_Agua_2025.xlsx (aba Cronograma)",
+      "referencia": "2025-01 a 2025-05",
+      "escala": "Agregado por Região Administrativa",
+      "src": "—",
+      "geometria": "Tabela (agregada por RA)",
+      "atualizacao": "2026-10-13",
+      "licenca": "Dados públicos agregados; citar GVAFNB/DIVAL/SVS/SES-DF.",
+      "restricoes": "Sem endereços, coordenadas, códigos de amostra ou equipes. Dados preliminares pendentes de validação institucional.",
+      "acesso": "Público",
+      "anos": [
+        2025
+      ],
+      "camada": "monitoramento",
+      "formatos": {
+        "xlsx": {
+          "href": "downloads/mapeamento_2025/mapeamento_agua_2025_agregado.xlsx",
+          "tamanho": "11,2 KB"
+        },
+        "csv": {
+          "href": "downloads/mapeamento_2025/mapeamento_agua_2025_agregado.csv",
+          "tamanho": "5,4 KB"
+        }
+      },
+      "qualidade": {
+        "ano": 2025,
+        "linhas": 1349,
+        "ra_por_espacial": 981,
+        "ra_atributo_diverge_da_espacial": 54,
+        "coordenada_suspeita_prevaleceu_atributo": 16,
+        "ra_por_atributo": 366,
+        "sem_codigo_amostra": 530,
+        "linhas_repetidas_mesma_amostra": 2,
+        "sem_coordenada": 350,
+        "sem_data": 3,
+        "amostras_distintas": 1347
+      },
+      "metadados": "docs/metadados/mapeamento_2025.json"
+    },
+    {
+      "id": "mapeamento_2026",
+      "nome": "Mapeamento da Água 2026 · base agregada",
+      "tema": "Monitoramento",
+      "descricao": "1.808 amostras distintas agregadas por RA, Região de Saúde, mês e motivo, com contagens de coliformes totais e E. coli.",
+      "fonte": "GVAFNB/DIVAL/SVS/SES-DF · Mapeamento_Agua_2026.xlsx (aba Cronograma)",
+      "referencia": "2026-01 a 2026-06",
+      "escala": "Agregado por Região Administrativa",
+      "src": "—",
+      "geometria": "Tabela (agregada por RA)",
+      "atualizacao": "2026-10-13",
+      "licenca": "Dados públicos agregados; citar GVAFNB/DIVAL/SVS/SES-DF.",
+      "restricoes": "Sem endereços, coordenadas, códigos de amostra ou equipes. Dados preliminares pendentes de validação institucional.",
+      "acesso": "Público",
+      "anos": [
+        2026
+      ],
+      "camada": "monitoramento",
+      "formatos": {
+        "xlsx": {
+          "href": "downloads/mapeamento_2026/mapeamento_agua_2026_agregado.xlsx",
+          "tamanho": "14,5 KB"
+        },
+        "csv": {
+          "href": "downloads/mapeamento_2026/mapeamento_agua_2026_agregado.csv",
+          "tamanho": "8,5 KB"
+        }
+      },
+      "qualidade": {
+        "ano": 2026,
+        "linhas": 1808,
+        "ra_por_espacial": 1768,
+        "ra_atributo_diverge_da_espacial": 70,
+        "coordenada_suspeita_prevaleceu_atributo": 34,
+        "ra_por_atributo": 40,
+        "sem_coordenada": 4,
+        "coordenada_fora_do_df": 2,
+        "sem_data": 4,
+        "amostras_distintas": 1808
+      },
+      "metadados": "docs/metadados/mapeamento_2026.json"
+    },
+    {
+      "id": "rios_corregos",
+      "nome": "Rios e Córregos",
+      "tema": "Hidrografia",
+      "descricao": "Hidrografia linear do DF: rio (51.741), conexão (5.635), córrego (5.484), canal (939), sangradouro (319).",
+      "fonte": "SEGETH/SEDUH-DF · Hidrografia Geral",
+      "referencia": "Criação 12/12/2017; modificação 18/10/2019",
+      "escala": "Não informada",
+      "src": "SIRGAS 2000 / UTM 23S (EPSG:31983)",
+      "geometria": "Linha (64.118 feições)",
+      "atualizacao": "2019-10-18",
+      "licenca": "Produto de autoria da SEGETH/SEDUH-DF. Metadados da fonte: uso próprio, vedada a reprodução e comercialização para terceiros; a SEDUH não se responsabiliza pelo uso impróprio.",
+      "restricoes": "Download não disponibilizado: a licença da fonte veda reprodução para terceiros. Visualização simplificada no mapa, com atribuição. Obtenha o arquivo junto à SEDUH-DF.",
+      "acesso": "Visualização",
+      "anos": [
+        2019
+      ],
+      "camada": "rios",
+      "formatos": {},
+      "metadados": "docs/metadados/rios_corregos.json"
+    },
+    {
+      "id": "lagos_barragens",
+      "nome": "Lagos e Barragens",
+      "tema": "Hidrografia",
+      "descricao": "Espelhos d'água do DF: lagoa (1.607), alagado (217), rio (111), lago (5).",
+      "fonte": "SEGETH/SEDUH-DF · Hidrografia Geral",
+      "referencia": "Criação 12/12/2017; modificação 18/10/2019",
+      "escala": "Não informada",
+      "src": "SIRGAS 2000 / UTM 23S (EPSG:31983)",
+      "geometria": "Polígono (1.940 feições)",
+      "atualizacao": "2019-10-18",
+      "licenca": "Produto de autoria da SEGETH/SEDUH-DF. Metadados da fonte: uso próprio, vedada a reprodução e comercialização para terceiros; a SEDUH não se responsabiliza pelo uso impróprio.",
+      "restricoes": "Download não disponibilizado: a licença da fonte veda reprodução para terceiros. Visualização simplificada no mapa, com atribuição. Obtenha o arquivo junto à SEDUH-DF.",
+      "acesso": "Visualização",
+      "anos": [
+        2019
+      ],
+      "camada": "lagos",
+      "formatos": {},
+      "metadados": "docs/metadados/lagos_barragens.json"
+    },
+    {
+      "id": "gestao_coletas_2026",
+      "nome": "VIGIÁGUA DF · Gestão de Coletas 2026",
+      "tema": "Monitoramento",
+      "descricao": "Base operacional institucional (visitas, laudos, endereços e contatos).",
+      "fonte": "GVAFNB/DIVAL/SVS/SES-DF",
+      "referencia": "2026",
+      "escala": "—",
+      "src": "—",
+      "geometria": "Tabela",
+      "atualizacao": "—",
+      "licenca": "Uso institucional.",
+      "restricoes": "Base restrita: não é publicada nem lida por este portal. Somente derivados agregados aprovados poderão ser publicados.",
+      "acesso": "Restrito",
+      "anos": [
+        2026
+      ],
+      "camada": null,
+      "formatos": {},
+      "metadados": "docs/metadados/gestao_coletas_2026.json"
+    }
+  ]
+}

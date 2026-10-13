@@ -1,0 +1,21 @@
+{
+  "id": "gestao_coletas_2026",
+  "nome": "VIGIÁGUA DF · Gestão de Coletas 2026",
+  "tema": "Monitoramento",
+  "descricao": "Base operacional institucional (visitas, laudos, endereços e contatos).",
+  "fonte": "GVAFNB/DIVAL/SVS/SES-DF",
+  "referencia": "2026",
+  "escala": "—",
+  "src": "—",
+  "geometria": "Tabela",
+  "atualizacao": "—",
+  "licenca": "Uso institucional.",
+  "restricoes": "Base restrita: não é publicada nem lida por este portal. Somente derivados agregados aprovados poderão ser publicados.",
+  "acesso": "Restrito",
+  "anos": [
+    2026
+  ],
+  "camada": null,
+  "formatos": {},
+  "versao_catalogo": "2.0.0"
+}

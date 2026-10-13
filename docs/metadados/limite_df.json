@@ -1,0 +1,28 @@
+{
+  "id": "limite_df",
+  "nome": "Limite do Distrito Federal",
+  "tema": "Limites territoriais",
+  "descricao": "Contorno do Distrito Federal (linha), com código IBGE da UF (53).",
+  "fonte": "Pacote 'Limite do DF.zip' fornecido ao projeto (atributos no padrão IBGE)",
+  "referencia": "Não informada na fonte",
+  "escala": "Não informada",
+  "src": "SIRGAS 2000 / UTM 23S (EPSG:31983) na fonte; downloads em EPSG:4326",
+  "geometria": "Linha (1 feição)",
+  "atualizacao": "2026-10-13",
+  "licenca": "Não informada na fonte; confirmar antes de redistribuir.",
+  "restricoes": "Nenhuma informada.",
+  "acesso": "Público",
+  "anos": [],
+  "camada": "limite",
+  "formatos": {
+    "shp": {
+      "href": "downloads/limite_df/limite_df.zip",
+      "tamanho": "108,3 KB"
+    },
+    "geojson": {
+      "href": "downloads/limite_df/limite_df.geojson",
+      "tamanho": "265,6 KB"
+    }
+  },
+  "versao_catalogo": "2.0.0"
+}

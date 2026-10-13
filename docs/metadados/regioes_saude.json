@@ -1,0 +1,28 @@
+{
+  "id": "regioes_saude",
+  "nome": "Regiões de Saúde do DF",
+  "tema": "Saúde",
+  "descricao": "Sete Regiões de Saúde (Central, Centro-Sul, Leste, Norte, Oeste, Sudoeste e Sul) reconstituídas pela dissolução dos 35 polígonos de RA conforme a tabela de correspondência v2.0.0.",
+  "fonte": "GeoVIGIÁGUA DF, a partir de SEGETH/SEDUH-DF (RAs) e da tabela RA–Região de Saúde",
+  "referencia": "2026-10-13",
+  "escala": "Cadastral (herdada das RAs)",
+  "src": "WGS 84 (EPSG:4326)",
+  "geometria": "Polígono (7 feições)",
+  "atualizacao": "2026-10-13",
+  "licenca": "Uso livre com citação; validar com SES-DF.",
+  "restricoes": "Preliminar; requer validação institucional.",
+  "acesso": "Público",
+  "anos": [],
+  "camada": "rs",
+  "formatos": {
+    "shp": {
+      "href": "downloads/saude/regioes_saude_df.zip",
+      "tamanho": "394,5 KB"
+    },
+    "geojson": {
+      "href": "downloads/saude/regioes_saude_df.geojson",
+      "tamanho": "888,2 KB"
+    }
+  },
+  "versao_catalogo": "2.0.0"
+}
