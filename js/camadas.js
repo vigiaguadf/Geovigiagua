@@ -5,7 +5,7 @@ export const CENTRO_DF = [-15.79, -47.80];
 
 export const BASES = {
   osm: { rotulo: "OpenStreetMap", url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", opcoes: { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">colaboradores do OpenStreetMap</a>' } },
-  claro: { rotulo: "Claro (CARTO)", url: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", opcoes: { maxZoom: 19, subdomains: "abcd", attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>' } },
+  claro: { rotulo: "Claro (Esri Light Gray)", url: "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", opcoes: { maxZoom: 19, maxNativeZoom: 16, attribution: 'Base &copy; Esri, HERE, Garmin, &copy; colaboradores do OpenStreetMap' } },
   topo: { rotulo: "Topográfico (OpenTopoMap)", url: "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", opcoes: { maxZoom: 17, attribution: 'Dados: &copy; OpenStreetMap, SRTM · Estilo: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)' } },
   satelite: { rotulo: "Imagem de satélite (Esri)", url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", opcoes: { maxZoom: 19, attribution: "Imagens &copy; Esri, Maxar, Earthstar Geographics" } },
 };
